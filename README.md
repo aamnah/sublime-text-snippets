@@ -20,7 +20,7 @@ Generates a YAML frontmatter block. Using this for markdown notes for Hugo. Not 
 
 ```yaml
 ---
-title: based-on-filename.md
+title: Based On Filename
 date: 
 uuid: 
 slug: based-on-filename
@@ -29,3 +29,13 @@ description:
 tags:
 ---
 ```
+
+Title:
+- replace `-` and `_` with a space
+- uppercase the first character of the word
+- remove file extension
+
+Slug:
+- replace spaces with `-`
+- lowercase all characters
+- remove file extension
