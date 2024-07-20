@@ -1,7 +1,7 @@
 <snippet>
   <content><![CDATA[
 ---
-title: ${1:$TM_FILENAME}
+title: ${1:${TM_FILENAME/^(\w)|(?:_(\w))|(?:-(\w))|(\.[^.]+$)/(?1\u$1:)(?2 \u$2:)(?3 \u$3:)(?4:)/g}}
 date: ${2}
 uuid: ${3}
 slug: ${4:${TM_FILENAME/([A-Z])|(\s+)|(\.[^.]+$)/(?1\l$1:)(?2-:)(?3:)/g}}
