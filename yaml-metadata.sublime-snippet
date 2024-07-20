@@ -1,0 +1,20 @@
+<snippet>
+  <content><![CDATA[
+---
+title: ${1:$TM_FILENAME}
+date: ${2}
+uuid: ${3}
+slug: ${4:${TM_FILENAME/([A-Z])|(\s+)|(\.[^.]+$)/(?1\l$1:)(?2-:)(?3:)/g}}
+draft: ${5:true}
+description: $6
+tags: $7
+---
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>meta</tabTrigger> 
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.markdown</scope> -->
+  <!-- Optional: Description to show in the menu -->
+  <description>Insert YAML metadata for a note (slug, draft)</description>
+</snippet>
