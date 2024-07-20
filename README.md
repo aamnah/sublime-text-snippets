@@ -7,6 +7,12 @@ trigger: `slug`
 
 Converts filename to a slug that can be used inside a URL. Replace spaces with dashes, convert characters to lowercase and remove file extension
 
+```
+ai-image-generation.md -> ai-image-generation
+Online card payments.md -> online-card-payments
+some Random FIle NAME with blah.txt -> some-random-file-name-with-blah
+```
+
 ###### yaml-metadata.sublime-snippet
 trigger: `meta`
 
